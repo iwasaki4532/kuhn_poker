@@ -649,9 +649,8 @@ def main():
                               └→ game_over（終了選択 or チップ切れ）
     game_over → start（リセット後）
     """
-    st.set_page_config(page_title="クーン ポーカー", page_icon="🃏", layout="centered")  # ページの基本設定
-    st.title("🃏 クーン ポーカー")
-    st.caption("J < Q < K の3枚を使ったポーカー。AIはCFRアルゴリズムで学習済みです。")
+    st.set_page_config(page_title="クーン ポーカー", layout="centered")  # ページの基本設定
+    st.title("クーン ポーカー")
 
     init_session()        # session_stateの初期化（既存値は維持）
     trainer = load_trainer()  # キャッシュされた学習済みtrainerを取得（初回のみ学習）
