@@ -670,8 +670,6 @@ def main():
         st.write("カード強さ: J < Q < K")
         st.write("p = Pass / Fold")
         st.write("b = Bet / Call")
-        st.write("先手がパスして後手がベットして先手がパス (pbp) → 後手の勝ち")
-        st.write("両者ベット (bb / pbb) → 強いカードが勝ち (+2)")
 
     phase = st.session_state.phase  # 現在のフェーズを取得し、対応する描画処理に分岐
 
